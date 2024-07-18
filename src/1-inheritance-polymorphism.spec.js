@@ -223,7 +223,7 @@ describe(testSuiteName, () => {
 
     const randomIMsg = Math.random().toString(36).substring(7);
     const reubenAppleMsg = myIPhone.sendIMessage(reubenIPhone, randomIMsg);
-    expect(reubenAppleMsg).toEqual(`Message: ${randomIMsg} - sent from ${reubenIPhone.model}`);
+    expect(reubenAppleMsg).toEqual(`Message: ${randomIMsg} - sent from ${myIPhone.model}`);
 
     const mayaAndroidMsg = myIPhone.sendIMessage(mayaAndroid, 'Hey Maya');
     expect(mayaAndroidMsg).toEqual('Message could not be sent.');

@@ -43,7 +43,7 @@ class AppleIPhone extends Phone{
   }
   sendIMessage(phone, message){
     if(phone.hasOwnProperty("model") && phone instanceof AppleIPhone){
-      return `Message: ${message} - sent from ${phone.model}`
+      return `Message: ${message} - sent from ${this.model}`
     }else{
       return 'Message could not be sent.'
     }
